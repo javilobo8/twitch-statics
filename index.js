@@ -11,6 +11,11 @@ const {
 
 const streams = require('./streams.json');
 
+if (!config.twitch.clientId) {
+  console.error('NO CLIENT_ID SPECIFIED');
+  process.exit(1);
+}
+
 axios.defaults.headers.common['Client-ID'] = config.twitch.clientId;
 
 function getStreamData(channel) {
