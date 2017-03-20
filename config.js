@@ -3,7 +3,7 @@ const config = {
     clientId: process.env.CLIENT_ID
   },
   mongo: {
-    uri: 'mongodb://192.168.1.59:27017/twitch-statics'
+    uri: 'mongodb://localhost:27017/twitch-statics'
   }
 };
 
